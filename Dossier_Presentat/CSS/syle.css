@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/************ HEADER ****************/
+header {
+  font-family: "Merriweather", sans-serif;
+  padding-bottom: 30px;
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bolder;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        letter-spacing: 2px;
+        color: brown;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blanchedalmond;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+
+    ul {
+      display: flex;
+      gap: 35px;
+
+      li {
+        display: flex;
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: brown;
+          border-radius: 5px;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            padding: 5px;
+            background-color: rgba(178, 118, 234, 0.331);
+          }
+        }
+      }
+    }
+  }
+}
+/************* MAIN ****************/
+
+/******* Pour le titre h1 *********/
+.section-premiere {
+  background-color: rgba(131, 63, 4, 0.509);
+  padding: 20px;
+  h1 {
+    padding: 15px;
+    text-align: center;
+    font-family: "Merriweather", sans-serif;
+    color: rgb(78, 2, 2);
+  }
+  p {
+    /* text-align: center; */
+    width: 75%;
+    margin: 0 auto;
+    padding: 5px;
+    color: brown;
+    font-family: "Poppins", sans-serif;
+  }
+  img {
+    width: 400px;
+    border: 5px solid rgb(0, 162, 255);
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: width 2s;
+
+    &:hover {
+      width: 600px;
+    }
+  }
+}
+/********** Pour la banniere **********/
+.banniere {
+  background-image: url(../Doss_image/image-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+
+  h2 {
+    text-align: center;
+    padding: 40px;
+    font-size: 5em;
+  }
+}
+/************* section-box ********/
+/*** tpour la taille de toute les div */
+.section-box {
+  background-color: #805d36;
+  font-family: "Merriweather", sans-serif;
+  padding: 50px;
+
+  h4 {
+    color: plum;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  button {
+    padding: 15px;
+    background-color: antiquewhite;
+    display: block;
+    margin: 0 auto;
+    /* justify-content: center; */
+    border: 2px solid rgb(45, 1, 1);
+    border-radius: 50px;
+    transition: 1.5s ease-in-out;
+
+    &:hover {
+      background-color: palevioletred;
+      color: indigo;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(104, 60, 3);
+      font-size: 1.7em;
+    }
+  }
+}
+/******** Les flexbox **********/
+#conteneurFlex {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #5a0802;
+    background-color: pink;
+    box-shadow: 5px 8px 13px 3px rgb(71, 118, 228);
+  }
+}
+/*********** Les flex-direction *********/
+#conteneurdirection {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #5a0802;
+    background-color: rgb(192, 203, 255);
+  }
+}
+/************ Le retour à la ligne ***********/
+#conteneurWrap {
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #5a0802;
+    background-color: rgb(245, 150, 83);
+  }
+}
+/*************** FOOTER *************/
+footer {
+  background-color: blanchedalmond;
+  font-size: "Merriweather", sans-serif;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-link ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  font-size: 1.3em;
+  font-weight: bold;
+
+  li {
+    list-style-type: none;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      letter-spacing: 1px;
+      color: #ee8e21;
+    }
+  }
+}
+
+.footer-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  i {
+    display: flex;
+    color: #5a0802;
+    font-size: 35px;
+
+    &:hover {
+      color: #ee8e21;
+    }
+  }
+}
+div.trait {
+  height: 1px;
+  width: 90%;
+  background-color: #5a0802;
+  margin: 30px auto;
+}
+footer p {
+  font-size: 1.5em;
+  text-align: center;
+}
+/* *************************************************   *********************************************** */
+/* Les MEDIA QUERIES */
+/**********************************  *******************************************************/
+
+/********************  Pour les  petits écran ****************************/
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(73, 137, 174, 0.525);
+    padding: 5px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    gap: 5px;
+    width: 100%;
+  }
+  .section-premiere {
+    background-color: pink;
+    h1,
+    p,
+    img {
+      width: 100%;
+    }
+    h1 {
+      color: aqua;
+    }
+  }
+  .banniere {
+    background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg);
+
+    h2 {
+      color: #fff;
+      font-size: 4em;
+      padding: 10px;
+    }
+  }
+  .section-box {
+    width: 100%;
+    background-color: rgba(112, 38, 96, 0.817);
+    color: orangered;
+  }
+  #conteneurFlex,
+  #conteneurdirection,
+  #conteneurWrap {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+
+  #conteneurFlex .box,
+  #conteneurdirection .box,
+  #conteneurWrap .box {
+    width: 300px;
+    height: 300px;
+  }
+  footer {
+    background-color: rgba(73, 137, 174, 0.525);
+  }
+}
+
+/*******************  Pour les écrans inférieur ou égal à 1200px  **************/
+@media (min-width: 600px) and (max-width: 1200px) {
+  header nav {
+    background-color: rgb(99, 216, 99);
+  }
+  .section-premiere {
+    background-color: #333;
+    h1,
+    p,
+    img {
+      width: 100%;
+    }
+    h1 {
+      color: red;
+    }
+  }
+
+  .banniere {
+    background-image: url(../Doss_image/pexels-jdgromov-9679748.jpg);
+
+    h2 {
+      color: palevioletred;
+      font-size: 5em;
+    }
+  }
+  .section-box {
+    width: 100%;
+    background-color: rgba(122, 6, 55, 0.817);
+  }
+  #conteneurFlex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #conteneurFlex,
+  #conteneurdirection,
+  #conteneurWrap {
+    width: 100%;
+  }
+  #conteneurFlex .box,
+  #conteneurdirection .box,
+  #conteneurWrap .box {
+    width: 400px;
+    height: 400px;
+    margin: 15px;
+    font-size: 35px;
+  }
+  footer {
+    background-color: rgb(99, 216, 99);
+  }
+}
