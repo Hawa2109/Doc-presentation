@@ -58,6 +58,11 @@ header {
   }
 }
 /************* MAIN ****************/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Evite les espaces blancs autour de l'image */
+}
 
 /******* Pour le titre h1 *********/
 .section-premiere {
@@ -201,6 +206,18 @@ header {
     background-color: rgb(245, 150, 83);
   }
 }
+
+#conteneurFlex,
+#conteneurdirection,
+#conteneurWrap {
+  width: 100%; /* assurer que la largeur est relative */
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /*************** FOOTER *************/
 footer {
   background-color: blanchedalmond;
@@ -270,7 +287,7 @@ footer p {
   header nav {
     flex-direction: column;
     align-items: center;
-    background-color: rgba(73, 137, 174, 0.525);
+    background-color: rgba(73, 137, 174, 0.852);
     padding: 5px;
   }
 
@@ -295,7 +312,7 @@ footer p {
     }
   }
   .banniere {
-    background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg);
+    /* background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg); */
 
     h2 {
       color: #fff;
@@ -328,7 +345,7 @@ footer p {
 }
 
 /*******************  Pour les écrans inférieur ou égal à 1200px  **************/
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600.98px) and (max-width: 1200.98px) {
   header nav {
     background-color: rgb(99, 216, 99);
   }
@@ -375,5 +392,24 @@ footer p {
   }
   footer {
     background-color: rgb(99, 216, 99);
+  }
+}
+@media (max-width: 400.98px) {
+  body {
+    width: 100%;
+  }
+  header nav {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .banniere {
+    background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg);
+  }
+
+  #conteneurFlex .box,
+  #conteneurdirection .box,
+  #conteneurWrap .box {
+    width: 100%;
+    height: auto;
   }
 }
