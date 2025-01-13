@@ -70,6 +70,7 @@ img {
   padding: 20px;
   h1 {
     padding: 15px;
+    font-size: 2.5em;
     text-align: center;
     font-family: "Merriweather", sans-serif;
     color: rgb(78, 2, 2);
@@ -81,9 +82,10 @@ img {
     padding: 5px;
     color: brown;
     font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
   }
   img {
-    width: 400px;
+    width: 600px;
     border: 5px solid rgb(0, 162, 255);
     border-radius: 15px;
     display: block;
@@ -91,7 +93,7 @@ img {
     transition: width 2s;
 
     &:hover {
-      width: 600px;
+      width: 900px;
     }
   }
 }
@@ -125,10 +127,10 @@ img {
     font-weight: bold;
   }
   button {
-    padding: 15px;
+    padding: 25px;
     background-color: antiquewhite;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     /* justify-content: center; */
     border: 2px solid rgb(45, 1, 1);
     border-radius: 50px;
@@ -160,6 +162,7 @@ img {
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+    font-size: 2em;
     width: 300px;
     height: 300px;
     border: 5px solid #5a0802;
@@ -179,9 +182,10 @@ img {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
     font-weight: bolder;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 5px solid #5a0802;
     background-color: rgb(192, 203, 255);
   }
@@ -199,6 +203,7 @@ img {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
     font-weight: bolder;
     width: 250px;
     height: 250px;
@@ -280,6 +285,25 @@ footer p {
 /**********************************  *******************************************************/
 
 /********************  Pour les  petits écran ****************************/
+@media (max-width: 400.98px) {
+  body {
+    width: 100%;
+  }
+  header nav {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .banniere {
+    background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg);
+  }
+
+  #conteneurFlex .box,
+  #conteneurdirection .box,
+  #conteneurWrap .box {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 600px) {
   body {
     width: 100%;
@@ -307,6 +331,13 @@ footer p {
     img {
       width: 100%;
     }
+    h1{
+      font-size: 2em;
+    }
+    p{
+     margin: 10px;
+      font-size: 1em;
+    }
     h1 {
       color: aqua;
     }
@@ -324,6 +355,11 @@ footer p {
     width: 100%;
     background-color: rgba(112, 38, 96, 0.817);
     color: orangered;
+
+    #lien-externe {
+      width: 100%;
+      margin: 30px auto;
+    }
   }
   #conteneurFlex,
   #conteneurdirection,
@@ -372,6 +408,14 @@ footer p {
   .section-box {
     width: 100%;
     background-color: rgba(122, 6, 55, 0.817);
+
+
+    #lien-externe {
+      width: 80%;
+      margin: 15px auto;
+      font-size: 1.5em;
+      background-color: rgb(80, 178, 48);
+    }
   }
   #conteneurFlex {
     display: flex;
@@ -394,22 +438,4 @@ footer p {
     background-color: rgb(99, 216, 99);
   }
 }
-@media (max-width: 400.98px) {
-  body {
-    width: 100%;
-  }
-  header nav {
-    flex-direction: column;
-    padding: 5px;
-  }
-  .banniere {
-    background-image: url(../Doss_image/pexels-mikhail-nilov-8319458.jpg);
-  }
 
-  #conteneurFlex .box,
-  #conteneurdirection .box,
-  #conteneurWrap .box {
-    width: 100%;
-    height: auto;
-  }
-}
